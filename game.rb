@@ -53,7 +53,7 @@ class Game
       if !is_correct
         @@current_player.loose_life
       end
-      @@current_player == @player_1 ? @@current_player = @player_2 :  @@current_player = @player_1
+      @@current_player == @player_1 ? @@current_player = @player_2 : @@current_player = @player_1
       show_game_status()
     end
     show_winner(get_winner())
